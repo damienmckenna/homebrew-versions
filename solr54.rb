@@ -5,12 +5,12 @@ class Solr54 < Formula
   mirror "https://archive.apache.org/dist/lucene/solr/5.4.1/solr-5.4.1.tgz"
   sha256 "3e4b4ec7bd728b49b2ebc3dbe8f3d1ef89fded4ab86b9e2f856bedd58c99f28b"
 
+  bottle :unneeded
+
   depends_on :java
 
   conflicts_with "solr", :because => "Differing versions of the same formula"
   conflicts_with "solr55", :because => "Differing versions of the same formula"
-
-  bottle :unneeded
 
   skip_clean "example/logs"
 
